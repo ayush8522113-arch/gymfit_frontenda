@@ -1,0 +1,33 @@
+.cropper-container {
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+.cropper-box {
+  position: relative;
+
+  width: 100%;
+
+  height: 400px;
+
+  background: #111;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.crop-btn {
+  margin-top: 20px;
+
+  background: var(--primary-color);
+
+  color: white;
+
+  padding: 14px 24px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+}

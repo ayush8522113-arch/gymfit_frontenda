@@ -1,0 +1,158 @@
+/* =========================
+   ORDERS SECTION
+========================= */
+
+.orders-section {
+  padding: 100px 0;
+
+  background: #e8f4db;
+
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.orders-header {
+  margin-bottom: 50px;
+}
+
+.orders-header h1 {
+  font-size: 3rem;
+
+  margin-bottom: 10px;
+}
+
+.orders-header p {
+  color: var(--gray-text);
+}
+
+/* ORDER CARD */
+
+.order-card {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: 180px 1fr auto;
+
+  gap: 30px;
+
+  align-items: center;
+
+  transition: var(--transition);
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+
+.order-left img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+/* CENTER */
+
+.order-center span {
+  color: var(--primary-color);
+
+  font-weight: 600;
+}
+
+.order-center h2 {
+  margin: 15px 0;
+
+  font-size: 1.7rem;
+}
+
+.order-center p {
+  color: var(--gray-text);
+
+  margin-bottom: 15px;
+}
+
+.order-center h3 {
+  font-size: 1.5rem;
+}
+
+/* RIGHT */
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  align-items: flex-end;
+}
+
+/* STATUS */
+
+.delivered-status {
+  background: rgba(0, 255, 100, 0.12);
+
+  color: #00d26a;
+
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+}
+
+/* BUTTON */
+
+.order-right button {
+  background: var(--primary-color);
+
+  color: white;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.order-right button:hover {
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .order-card {
+    grid-template-columns: 1fr;
+  }
+
+  .order-right {
+    align-items: flex-start;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .orders-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .order-left img {
+    width: 100%;
+    height: 300px;
+  }
+
+}

@@ -1,0 +1,176 @@
+/* =========================
+   AUTH SECTION
+========================= */
+
+.auth-container {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   FORM BOX
+========================= */
+
+.auth-form {
+  width: 100%;
+  max-width: 450px;
+
+  background: var(--light-bg);
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  border: 1px solid var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.auth-form h2 {
+  text-align: center;
+
+  font-size: 2rem;
+
+  margin-bottom: 10px;
+
+  color: var(--primary-color);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.auth-form input {
+  width: 100%;
+
+  height: 55px;
+
+  background: #d3ffd3;
+
+  border: 1px solid var(--primary-color);
+
+  border-radius: 10px;
+
+  padding: 0 15px;
+
+  color:#0b0b0b;
+
+  font-size: 1rem;
+
+  transition: var(--transition);
+}
+
+.auth-form input:focus {
+  border-color: var(--primary-color);
+
+  outline: none;
+}
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.auth-form input::placeholder {
+  color: #888;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.auth-form button {
+  width: 100%;
+
+  height: 55px;
+
+  background: var(--primary-color);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  border-radius: 10px;
+
+  transition: var(--transition);
+}
+
+.auth-form button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   EXTRA TEXT
+========================= */
+
+.auth-bottom-text {
+  text-align: center;
+
+  color: var(--gray-text);
+
+  margin-top: 10px;
+}
+
+.auth-bottom-text a {
+  color: var(--primary-color);
+
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 576px) {
+
+  .auth-form {
+    padding: 30px 20px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.7rem;
+  }
+
+}
+
+.auth-error {
+  background: rgba(255, 0, 0, 0.12);
+
+  color: #ff4d4d;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  font-size: 0.95rem;
+}
+
+.auth-switch {
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: var(--gray-text);
+}
+
+.auth-switch a {
+  color: var(--primary-color);
+
+  margin-left: 8px;
+
+  font-weight: 600;
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}

@@ -1,0 +1,193 @@
+.navbar {
+  width: 100%;
+  background-color:#EFF4F8;
+  border-bottom: 1px solid var(--border-color);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+
+.navbar-container {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color:#2d2e2d;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  list-style: none;
+}
+
+.nav-links li a {
+ color:#252525;
+  font-size: 1rem;
+ 
+  font-weight:bolder;
+
+  transition: var(--transition);
+}
+
+.nav-links li a:hover {
+  color: var(--primary-color);
+}
+
+/* RIGHT SECTION */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* CART */
+
+.cart-btn {
+  position: relative;
+
+  font-size: 1.3rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -10px;
+  right: -10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: var(--primary-color);
+color: white;
+  border-radius: 50%;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+  background-color:#79be02;
+  padding: 10px 20px;
+  color: white;
+
+
+  border-radius: var(--radius);
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.login-btn:hover {
+  opacity: 0.85;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-btn {
+  display: none;
+
+  background: transparent;
+  color: white;
+
+  font-size: 1.8rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+
+    top: 80px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    background: #111;
+
+    transition: 0.4s ease;
+
+    padding-top: 50px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .login-btn {
+    display: none;
+  }
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.logout-btn {
+  background: crimson;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}

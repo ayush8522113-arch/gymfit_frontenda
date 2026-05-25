@@ -1,0 +1,331 @@
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+.product-section {
+  padding: 100px 0;
+
+  background: #e8f4db;
+
+  min-height: 100vh;
+}
+
+.product-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+/* =========================
+   PRODUCT GALLERY
+========================= */
+
+.product-gallery {
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: 650px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  background: #161616;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.main-image:hover img {
+  transform: scale(1.05);
+}
+
+/* THUMBNAILS */
+
+.thumbnail-container {
+  display: flex;
+
+  gap: 20px;
+
+  margin-top: 25px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
+  transition: var(--transition);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+.active-thumb {
+  border-color: var(--primary-color);
+}
+
+/* =========================
+   PRODUCT DETAILS
+========================= */
+
+.product-details {
+  width: 100%;
+}
+
+.product-brand {
+  color: var(--primary-color);
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  font-size: 0.9rem;
+}
+
+.product-details h1 {
+  font-size: 3.5rem;
+
+  line-height: 1.2;
+
+  margin: 20px 0;
+}
+
+/* RATING */
+
+.product-rating {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+}
+
+.product-rating span {
+  color: var(--gray-text);
+}
+
+/* PRICE */
+
+.product-price {
+  font-size: 2.5rem;
+
+  color: var(--primary-color);
+
+  margin-bottom: 25px;
+}
+
+/* DESCRIPTION */
+
+.product-description {
+  color: var(--gray-text);
+
+  line-height: 1.8;
+
+  margin-bottom: 40px;
+}
+
+/* OPTIONS */
+
+.product-option {
+  margin-bottom: 35px;
+}
+
+.product-option h4 {
+  margin-bottom: 18px;
+
+  font-size: 1rem;
+}
+
+/* SIZE BUTTONS */
+
+.size-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.size-buttons button {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 12px;
+
+  background: #1a1a1a;
+
+  border: 1px solid var(--border-color);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.size-buttons button:hover {
+  background: var(--primary-color);
+
+  transform: translateY(-3px);
+}
+
+/* QUANTITY */
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  width: fit-content;
+
+  background: #1a1a1a;
+
+  padding: 15px 25px;
+
+  border-radius: 12px;
+}
+
+.quantity-box button {
+  background: transparent;
+
+  color: white;
+
+  font-size: 1.4rem;
+
+  transition: var(--transition);
+}
+
+.quantity-box button:hover {
+  color: var(--primary-color);
+}
+
+/* ACTION BUTTONS */
+
+.product-actions {
+  display: flex;
+
+  gap: 20px;
+
+  margin-top: 40px;
+}
+
+.add-cart-btn,
+.buy-btn {
+  flex: 1;
+
+  height: 60px;
+
+  border-radius: 12px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.add-cart-btn {
+  background: var(--primary-color);
+
+  color: white;
+}
+
+.buy-btn {
+  background: transparent;
+
+  border: 1px solid white;
+
+  color: white;
+}
+
+.add-cart-btn:hover,
+.buy-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* EXTRA INFO */
+
+.product-extra {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  color: var(--gray-text);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 1100px) {
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-image {
+    height: 450px;
+  }
+
+  .product-details h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .product-details h1 {
+    font-size: 2rem;
+  }
+
+  .main-image {
+    height: 350px;
+  }
+
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+
+}

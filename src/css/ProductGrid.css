@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background-color:#EEF2EC;
+
+}
+.product-grid .container{
+
+    background-color:#F3EFE8;
+    color: #111827;
+    padding:30px;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+     gap: 70px;
+  }
+}

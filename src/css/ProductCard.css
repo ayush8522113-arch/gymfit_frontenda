@@ -1,0 +1,222 @@
+.product-card {
+  background-color: #dffedf;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: var(--transition);
+
+  border: 1px solid transparent ;
+ 
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+
+  border-color:#d7fdd7;
+}
+
+/* IMAGE */
+
+.product-image {
+  width: 100%;
+  height: 320px;
+
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+/* INFO */
+
+.product-info {
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+/* CATEGORY */
+
+.product-category {
+  color: #79be02;
+
+  font-size: 1.1rem;
+
+  font-weight: bolder;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+
+.product-info h3 {
+  font-size: 1.6rem;
+
+  margin-bottom: 5px;
+
+  line-height: 1.3;
+
+}
+
+/* DESCRIPTION */
+
+.product-description {
+  color: var(--gray-text);
+
+  line-height: 0.5;
+
+  margin-bottom: 12px;
+  
+  flex: 1;
+}
+
+/* PRICE */
+
+.product-bottom {
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 1.7rem;
+
+  font-weight: bold;
+
+  color: rgb(14, 14, 14);
+  
+}
+
+/* ACTIONS */
+
+.product-actions {
+  display: flex;
+
+  gap: 10px;
+  
+}
+
+/* VIEW DETAILS */
+
+.view-details-btn {
+  flex: 1;
+
+  height: 52px;
+
+  border-radius: 12px;
+
+  background: transparent;
+
+  border: 1px solid #79be02;
+
+  color: #79be02;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+
+  margin-top: 0;
+}
+
+.view-details-btn:hover {
+  background: #79be02;
+
+  color: white;
+}
+
+/* ADD BUTTON */
+
+.add-btn {
+  flex: 1;
+
+  height: 52px;
+
+  border-radius: 12px;
+
+  background:#79be02;
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.add-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* QUANTITY */
+
+.quantity-controls {
+  flex: 1;
+
+  height: 52px;
+
+  background: #d3ffd3;
+
+  border-radius: 12px;
+   border: 1px solid #79be02;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 15px;
+}
+
+.quantity-controls button {
+  background: transparent;
+
+  color: #79be02;
+
+  font-size: 1.5rem;
+
+  transition: var(--transition);
+}
+
+.quantity-controls button:hover {
+  color: var(--primary-color);
+}
+
+.quantity-controls span {
+  font-size: 1.1rem;
+
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+
+  .product-image {
+    height: 260px;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+}

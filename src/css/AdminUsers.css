@@ -1,0 +1,47 @@
+.admin-users h1 {
+  color: white;
+
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+}
+
+.admin-users table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.admin-users thead {
+  background: var(--primary-color);
+}
+
+.admin-users th {
+  padding: 18px;
+
+  color: white;
+
+  text-align: left;
+}
+
+.admin-users td {
+  padding: 18px;
+
+  border-bottom: 1px solid #2b2b2b;
+
+  color: #d1d1d1;
+}
+
+.admin-users tbody tr {
+  background: #1a1a1a;
+
+  transition: var(--transition);
+}
+
+.admin-users tbody tr:hover {
+  background: #232323;
+}

@@ -1,0 +1,29 @@
+.admin-section {
+  min-height: 100vh;
+
+  background: #0f0f0f;
+
+  padding: 40px 0;
+}
+
+.admin-container {
+  width: 95%;
+
+  margin: auto;
+
+  display: flex;
+
+  gap: 30px;
+}
+
+.admin-content {
+  flex: 1;
+
+  background: #161616;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  overflow-x: auto;
+}

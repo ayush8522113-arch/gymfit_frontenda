@@ -1,0 +1,73 @@
+.admin-payments h1 {
+  color: white;
+
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+}
+
+.admin-payments table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-payments thead {
+  background: var(--primary-color);
+}
+
+.admin-payments th {
+  padding: 18px;
+
+  color: white;
+
+  text-align: left;
+}
+
+.admin-payments td {
+  padding: 18px;
+
+  border-bottom: 1px solid #2b2b2b;
+
+  color: #d1d1d1;
+}
+
+.admin-payments tbody tr {
+  background: #1a1a1a;
+
+  transition: var(--transition);
+}
+
+.admin-payments tbody tr:hover {
+  background: #232323;
+}
+
+/* STATUS */
+
+.paid {
+  background: rgba(0, 255, 0, 0.12);
+
+  color: #38ff75;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.pending {
+  background: rgba(255, 166, 0, 0.12);
+
+  color: orange;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}

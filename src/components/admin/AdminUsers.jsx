@@ -39,7 +39,7 @@ useEffect(() => {
         const { data } =
           await axios.get(
 
-            "http://localhost:5000/api/users",
+            "https://gymfit-backend-b0wf.onrender.com/api/users",
 
             config
           );

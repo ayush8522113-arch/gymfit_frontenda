@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://localhost:5000/api/payment";
+  "https://gymfit-backend-b0wf.onrender.com/api/payment";
 
 /* CREATE ORDER */
 

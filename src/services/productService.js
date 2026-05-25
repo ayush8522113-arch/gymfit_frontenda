@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://localhost:5000/api/products";
+  "https://gymfit-backend-b0wf.onrender.com/api/products";
 
 /* GET ALL PRODUCTS */
 

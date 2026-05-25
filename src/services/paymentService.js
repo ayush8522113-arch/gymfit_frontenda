@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL =
-  "https://gymfit-backend-b0wf.onrender.com/api/payment";
+const API_URL = `${import.meta.env.VITE_API_URL}/payment`;
 
 /* CREATE ORDER */
 

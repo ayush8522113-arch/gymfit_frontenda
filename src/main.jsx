@@ -36,5 +36,3 @@ ReactDOM.createRoot(
 
 );
 
-
-

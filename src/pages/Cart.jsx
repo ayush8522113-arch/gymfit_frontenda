@@ -38,7 +38,7 @@ function Cart() {
       const options = {
 
         key:
-          "rzp_test_St97sAiQAvdG8D",
+          process.env.RKEY,
 
         amount:
           order.amount,

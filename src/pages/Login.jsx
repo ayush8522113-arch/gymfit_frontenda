@@ -13,7 +13,7 @@ import "../css/Auth.css";
 
 import {
   loginUser,
-} from "../services/authService";
+} from "../services/authservice";
 
 function Login() {
 

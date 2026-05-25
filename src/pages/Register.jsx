@@ -13,7 +13,7 @@ import "../css/Auth.css";
 
 import {
   registerUser,
-} from "../services/authService";
+} from "../services/authservice";
 
 function Register() {
 

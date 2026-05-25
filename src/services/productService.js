@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "https://gymfit-backend-b0wf.onrender.com/api/products";
+  `${import.meta.env.VITE_API_URL}/products`;
 
 /* GET ALL PRODUCTS */
 

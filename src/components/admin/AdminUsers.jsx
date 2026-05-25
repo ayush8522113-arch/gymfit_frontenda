@@ -39,7 +39,7 @@ useEffect(() => {
         const { data } =
           await axios.get(
 
-            "https://gymfit-backend-b0wf.onrender.com/api/users",
+            `${import.meta.env.VITE_API_URL}/users`,
 
             config
           );

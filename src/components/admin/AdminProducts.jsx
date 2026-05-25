@@ -81,7 +81,7 @@ const [selectedImage, setSelectedImage] =
         const { data } =
           await axios.get(
 
-            "https://gymfit-backend-b0wf.onrender.com/api/products"
+            `${import.meta.env.VITE_API_URL}/products`
           );
 
         setProducts(data);
@@ -149,7 +149,7 @@ setSelectedImage(
         const { data } =
           await axios.post(
 
-            "https://gymfit-backend-b0wf.onrender.com/api/upload",
+            `${import.meta.env.VITE_API_URL}/upload`,
 
             imageData,
 
@@ -225,7 +225,7 @@ setSelectedImage(
           const { data } =
             await axios.post(
 
-              "https://gymfit-backend-b0wf.onrender.com/api/upload",
+              `${import.meta.env.VITE_API_URL}/upload`,
 
               formData,
 
@@ -352,7 +352,7 @@ setGalleryImages((prev) => [
 
         await axios.post(
 
-          "https://gymfit-backend-b0wf.onrender.com/api/products",
+          `${import.meta.env.VITE_API_URL}/products`,
 
           productData,
 
